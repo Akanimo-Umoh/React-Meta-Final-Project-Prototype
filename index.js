@@ -9,7 +9,7 @@ window.onscroll = function() {
   // document.querySelector(".togglenav.active").style.top = "0";
   prevScrollpos = currentScrollPos;
 }
-
+ 
 function toggleMenu() {
   const menuToggle = document.querySelector('.menuToggle');
   const secondary_nav = document.querySelector('.secondary-nav');
