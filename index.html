@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Shelby</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/regular.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/solid.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/fontawesome.css">
+</head>
+<body>
+    <div id="navbar" class="section1">
+        <nav>
+            <div class="primary-nav togglenav">
+                <a href="mailto: akanumoh4@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-medium"></i></a>
+                <a href="https://stackoverflow.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-stack-overflow"></i></a>
+            </div>
+            <div class="toggleLogo">
+                <a href=""><span>S</span>helby</a>
+            </div>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <div class="secondary-nav togglenav">
+                <!-- <div class="mobile">
+                    <div class="toggleLogo">
+                        <a href=""><span>S</span>helby</a>
+                    </div>
+                    <div class="mobileNav"></div>
+                </div> -->
+                <a id="smooth" href="#projects" onclick="toggleMenu();">Projects</a>
+                <a id="smooth" href="#contact-me" onclick="toggleMenu();">Contact Me</a>
+                <div class="media">
+                    <a href="mailto: akanumoh4@gmail.com" target="_blank" onclick="toggleMenu();" rel="noreferrer noopener"><i class="far fa-envelope"></i></a>
+                    <a href="https://github.com" target="_blank" onclick="toggleMenu();" rel="noreferrer noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" onclick="toggleMenu();" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com" target="_blank" onclick="toggleMenu();" rel="noreferrer noopener"><i class="fab fa-medium"></i></a>
+                    <a href="https://stackoverflow.com" target="_blank" onclick="toggleMenu();" rel="noreferrer noopener"><i class="fab fa-stack-overflow"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- About me -->
+    <section class="section2">
+        <div>
+            <img class="profile-img" src="./images/Tommy Shelby.jpg" alt="Tommy Shelby">
+            <p>Hello, I am Tommy Shelby!</p>
+            <h2 class="job">A frontend developer</h2>
+            <h2 class="job">specialised in React</h2>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section3">
+        <h1 class="heading">Featured Projects</h1>
+        <div class="projects-ctn">
+            <!-- Each project goes into here -->
+            <div>
+                <img src="./images/photo1.jpg" alt="project name">
+                <h4>Project name</h4>
+                <p class="fade">A little something about the project: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maiores cumque voluptas repellendus error excepturi, iure quos ipsa quasi eos.</p>
+                <h5>See more<span> <i class="fa fa-arrow-right"></i></span></h5>
+            </div>
+            <div>
+                <img src="./images/photo2.jpg" alt="project name">
+                <h4>Project name</h4>
+                <p class="fade">A little something about the project: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maiores cumque voluptas repellendus error excepturi, iure quos ipsa quasi eos.</p>
+                <h5>See more<span> <i class="fa fa-arrow-right"></i></span></h5>
+            </div>
+            <div>
+                <img src="./images/photo3.jpg" alt="project name">
+                <h4>Project name</h4>
+                <p class="fade">A little something about the project: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maiores cumque voluptas repellendus error excepturi, iure quos ipsa quasi eos.</p>
+                <h5>See more<span> <i class="fa fa-arrow-right"></i></span></h5>
+                
+            </div>
+            <div>
+                <img src="./images/photo4.jpg" alt="project name">
+                <h4>Project name</h4>
+                <p class="fade">A little something about the project: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maiores cumque voluptas repellendus error excepturi, iure quos ipsa quasi eos.</p>
+                <h5>See more<span> <i class="fa fa-arrow-right"></i></span></h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me -->
+    <section id="contact-me" class="section4">
+        <div class="form-ctn">
+            <h1 class="title heading">Contact me</h1>
+            <form action="mailto:akanumoh4@gmail.com">
+                <label for="name" >Name</label>
+                <input type="name" name="name" id="name" required>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required>
+                <label for="type">Type of enquiry</label>
+                
+                <select name="hireMe" id="hireMe" class="type">
+                    <option value="hireMe">Freelance project proposal</option>
+                    <option value="openSource">Open source consultancy session</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" minlength="20"></textarea>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section5">
+        Tommy Shelby • <i class="fa fa-copyright"></i> 2023
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
